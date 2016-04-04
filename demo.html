@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>demo</title>
+
+     <script src="lib/jquery-2.1.3.js"></script>
+     <script src="lib/jquery-ui-1.11.3.js"></script>
+
+     <link rel="stylesheet" href="lib/bootstrap.min.css">
+     <link rel="stylesheet" href="jquery-ui.css">
+     <link rel="stylesheet" href="hot-spots.css">
+     <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+</head>
+
+<body>
+    <div class="control-btn">
+        <button type="button" class="btn btn-info">保存</button>
+        <button type="button" class="btn btn-info">预览</button>
+    </div>
+    <div id="hot-spots">
+        <div class="page-area bg-info" style="background: url(demo.jpg) no-repeat center top;">
+            <div class="btn-ls">
+                <span class="up">上移</span>
+                <span class="down">下移</span>
+                <span class="add">添加热区</span>
+                <span class="copy">复制</span>
+                <span class="del">删除</span>
+            </div>
+            <div class="page-area-contant">
+                <img src="demo.jpg">
+                <div class="ui-widget-content fix-area"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialog">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">背景图【1920x300】</label>
+                <input type="text" class="form-control" id="text1">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">主图【990x300】</label>
+                <input type="text" class="form-control" id="text2">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">链接</label>
+                <input type="text" class="form-control" id="text3">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">打开方式</label>
+                <select class="form-control">
+                    <option value="_self">本页面打开</option>
+                    <option value="_blank">新页面打开</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-default">确 定</button>
+            <button type="submit" class="btn btn-default">取 消</button>
+        </form>
+    </div>  
+</body>
+<script src="hot-spots.js"></script>
+</html>
